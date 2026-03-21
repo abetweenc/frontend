@@ -1,0 +1,47 @@
+import { getStrapiMedia } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function HeroSection({ data }: any) {
+  const { title, description, image, cta } = data || {};
+
+  const imageUrl = getStrapiMedia(image?.url);
+
+  if (!imageUrl) return null;
+
+  return (
+    <div className="bg-[#C2B280] lg:h-[87vh]">
+      <div className="flex flex-col lg:flex-row items-center h-full px-6 py-16 lg:py-0 lg:px-0 lg:pl-30 gap-12 lg:gap-0">
+        <div className="flex items-start flex-col gap-6 lg:gap-10 w-full lg:w-auto">
+          <h1 className="font-playfair text-4xl lg:text-6xl lg:max-w-2xl">
+            {title}
+          </h1>
+
+          {/* Added base text-lg for mobile */}
+          <p className="text-[#444444] text-lg lg:text-2xl font-light lg:max-w-lg">
+            {description}
+          </p>
+
+          <Link
+            className="bg-[#1E1E1E] text-[#FFFFFF] px-5 py-3 lg:px-6 lg:py-3 rounded-sm hover:bg-[#555555]"
+            href={cta?.href || "#"}
+          >
+            {cta?.text}
+          </Link>
+        </div>
+
+        <div className="w-full lg:w-auto flex justify-center lg:block">
+          <Image
+            src={imageUrl || ""}
+            alt={title || "Hero image"}
+            width={500}
+            height={500}
+            // Added w-full max-w-md h-auto to keep the image responsive and well-proportioned on small screens
+            className="object-cover object-center w-full max-w-xl h-auto lg:max-w-none lg:w-220"
+            unoptimized
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
