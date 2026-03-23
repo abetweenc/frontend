@@ -35,7 +35,7 @@ export default function Curriculum({ data }: any) {
                     </div>
                   )}
 
-                  <h3 className="font-playfair text-lg lg:text-xl font-semibold text-[#111111] mb-3">
+                  <h3 className="font-playfair text-lg lg:text-lg font-semibold text-[#111111] mb-3">
                     {card.title}
                   </h3>
 

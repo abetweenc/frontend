@@ -1,10 +1,10 @@
-import Safe from "@/components/homepage/Safe";
 import Cta from "@/components/shared/Cta";
 import Curriculum from "@/components/works/Curriculum";
 import Future from "@/components/works/Future";
 import How from "@/components/works/How";
 import Journey from "@/components/works/Journey";
 import Portal from "@/components/works/Portal";
+import Safe from "@/components/works/Safe";
 import { getPageData } from "@/data/loader";
 
 export default async function page() {
