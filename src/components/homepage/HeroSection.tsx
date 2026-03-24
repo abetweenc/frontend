@@ -10,7 +10,7 @@ export default function HeroSection({ data }: any) {
   if (!imageUrl) return null;
 
   return (
-    <div className="bg-[#C2B280] lg:h-[80vh]">
+    <div className="bg-[#C2B280] lg:h-[75vh]">
       <div className="flex flex-col lg:flex-row items-center h-full px-6 py-14 lg:py-0 lg:px-0 lg:pl-24 gap-10 lg:gap-0">
         <div className="flex items-start flex-col gap-5 lg:gap-8 w-full lg:w-auto">
           <h1 className="font-playfair text-3xl lg:text-5xl lg:max-w-2xl">

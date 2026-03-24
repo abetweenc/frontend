@@ -9,7 +9,7 @@ export default function AboutHeroSection({ data }: any) {
   if (!imageUrl) return null;
 
   return (
-    <div className="lg:h-[80vh]">
+    <div className="lg:h-[70vh]">
       <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full px-6 py-14 lg:py-0 lg:-mt-10 lg:px-24 gap-10 lg:gap-0">
         <div className="flex items-start flex-col gap-5 lg:gap-8 w-full lg:w-auto">
           <h1 className="font-playfair text-3xl lg:text-5xl lg:max-w-2xl">

@@ -7,7 +7,7 @@ export default function GapBetween({ data }: any) {
         {title}
       </p>
 
-      <p className="text-center text-[#444444] text-sm lg:text-base lg:max-w-4xl">
+      <p className="text-center text-[#444444] text-sm lg:text-xl lg:max-w-6xl">
         {description}
       </p>
     </div>

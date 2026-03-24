@@ -19,7 +19,7 @@ export default function Curriculum({ data }: any) {
               return (
                 <div
                   key={card.id || index}
-                  className="bg-[#F4F5F6] border border-[#EAEAEE] shadow-[0_2px_10px_rgba(0,0,0,0.03)] py-8 px-5 lg:px-7 lg:py-10 flex flex-col items-center text-center rounded-[2px]"
+                  className="bg-[#F4F5F6] border border-[#98A0AA] shadow-xl py-8 px-5 lg:px-7 lg:py-10 flex flex-col items-center text-center rounded-[2px]"
                 >
                   {iconUrl && (
                     <div className="w-10 h-10 lg:w-12 lg:h-12 mb-4 lg:mb-6 flex items-center justify-center shrink-0">

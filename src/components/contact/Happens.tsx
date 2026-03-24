@@ -2,7 +2,7 @@ export default function Happens({ data }: any) {
   const { title, lists } = data || {};
 
   return (
-    <div className="w-full bg-white py-14 px-6 lg:py-20 border-t border-gray-100">
+    <div className="w-full bg-white py-14 px-6 lg:py-20 border-t border-gray-100 lg:pr-65">
       <div className="max-w-9xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-50 items-center">
         {/* Left Column: Title */}
         <div className="flex justify-center md:justify-end w-full md:w-1/2">

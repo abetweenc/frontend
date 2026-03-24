@@ -2,7 +2,7 @@ export default function Mission({ data }: any) {
   const { cards } = data || {};
 
   return (
-    <div className="w-full bg-white py-14 px-6 lg:py-20 border-b border-gray-200">
+    <div className="w-full bg-white py-14 px-6 lg:py-20 border-b border-gray-200 lg:pl-30">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 lg:gap-28 items-start">
         {cards &&
           cards.map((card: any, index: number) => (

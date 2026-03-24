@@ -7,7 +7,7 @@ export default function Began({ data }: any) {
         {title || "How ABC Began"}
       </h2>
 
-      <p className="text-[#555555] text-sm lg:text-base leading-relaxed lg:leading-[1.8] text-center max-w-5xl whitespace-pre-line">
+      <p className="text-[#555555] text-sm lg:text-lg leading-relaxed lg:leading-[1.8] text-center max-w-6xl whitespace-pre-line">
         {description}
       </p>
     </div>

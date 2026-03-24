@@ -14,7 +14,7 @@ export default function FlexiblePricing({ data }: any) {
           cards.map((card: any, index: number) => (
             <div
               key={index || card.id}
-              className="border border-[#98A0AA] bg-[#EEEEEE] w-full max-w-sm lg:w-fit py-8 px-7 lg:min-h-110 lg:px-12 lg:py-8 flex flex-col items-center justify-center gap-5 lg:gap-6"
+              className="border-2 border-[#ccd1d8] bg-[#EEEEEE] w-full max-w-sm lg:w-fit py-8 px-7 lg:min-h-110 lg:px-12 lg:py-8 flex flex-col items-center justify-center gap-5 lg:gap-6"
             >
               <p className="text-[#A1A1AA] text-3xl lg:text-4xl font-playfair text-center">
                 {card.title}
@@ -30,7 +30,7 @@ export default function FlexiblePricing({ data }: any) {
                 {card.lists &&
                   card.lists.map((list: any, listIndex: number) => (
                     <div
-                      className="flex items-center gap-2 lg:gap-2"
+                      className="flex items-center gap-2 lg:gap-2 "
                       key={listIndex || list.id}
                     >
                       <div className="w-1.5 h-1.5 lg:w-1 lg:h-1 bg-[#4A5565] rounded-full shrink-0"></div>

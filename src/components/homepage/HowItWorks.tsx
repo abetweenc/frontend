@@ -13,13 +13,13 @@ export default function HowItWorks({ data }: any) {
             return (
               <div
                 key={card.id || index}
-                className="flex items-center justify-center flex-col gap-4 lg:gap-6 w-full"
+                className="flex items-center justify-center flex-col gap-4 lg:gap-2 w-full"
               >
                 <p className="text-[#A1A1AA] text-4xl lg:text-5xl font-playfair">
                   {card.count}
                 </p>
 
-                <p className="font-playfair text-lg lg:text-2xl text-center">
+                <p className="font-playfair text-lg lg:text-2xl text-center lg:mt-5">
                   {card.title}
                 </p>
 

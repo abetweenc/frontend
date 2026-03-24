@@ -15,7 +15,7 @@ export default function Environments({ data }: any) {
           return (
             <div
               key={card.id || index}
-              className="flex flex-col items-center text-center gap-4 lg:gap-5 py-10 px-7 lg:py-14 lg:px-8 border border-[#98A0AA] bg-[#EEEEEE] shadow-[0_4px_15px_rgba(0,0,0,0.05)] rounded-[2px]"
+              className="flex flex-col items-center text-center gap-4 lg:gap-5 py-10 px-7 lg:py-10 lg:px-8 border border-[#98A0AA] bg-[#EEEEEE] shadow-[0_4px_15px_rgba(0,0,0,0.05)] rounded-[2px]"
             >
               {/* Icon */}
               {iconUrl && (
