@@ -9,7 +9,7 @@ export default function ApproachHeroSection({ data }: any) {
     <div className="w-full bg-white py-14 px-6 lg:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         {/* Left Column: Text Content */}
-        <div className="flex flex-col gap-6 lg:gap-8">
+        <div className="flex flex-col gap-6 lg:gap-8 lg:pl-10">
           <h2 className="font-playfair text-3xl lg:text-4xl text-[#111111] leading-tight">
             {title || "The Learning Hubs"}
           </h2>

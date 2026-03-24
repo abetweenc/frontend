@@ -7,7 +7,7 @@ export default function Founder({ data }: any) {
 
   return (
     <div className="w-full bg-white py-14 px-6 lg:py-20 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-40 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-40 items-center">
         {/* Left Column: Text Content */}
         <div className="flex flex-col gap-6 lg:gap-8 order-2 lg:order-1">
           <h2 className="font-playfair text-3xl lg:text-4xl text-[#111111] leading-tight">

@@ -11,7 +11,7 @@ export default function Journey({ data }: any) {
           {title || "Your journey to ABC"}
         </h2>
 
-        <div className="flex flex-col gap-20 lg:gap-32 w-full">
+        <div className="flex flex-col gap-20 lg:gap-32 w-full lg:pl-20">
           {cards &&
             cards.map((card: any, index: number) => {
               const imageUrl = getStrapiMedia(card.image?.url);
