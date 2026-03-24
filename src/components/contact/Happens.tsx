@@ -32,6 +32,7 @@ export default function Happens({ data }: any) {
             ))}
         </div>
       </div>
+      {/* l */}
     </div>
   );
 }
