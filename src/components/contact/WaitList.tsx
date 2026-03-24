@@ -9,6 +9,7 @@ export default function WaitList() {
         <p className="text-[#666666] text-base lg:text-lg leading-relaxed">
           Be among the first families to experience the ABC difference. Complete
           the form below and we'll contact you within 48 hours.
+          {/* <label htmlFor=""></label> */}
         </p>
       </div>
     </div>
