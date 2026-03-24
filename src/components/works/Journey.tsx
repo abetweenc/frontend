@@ -5,13 +5,13 @@ export default function Journey({ data }: any) {
   const { title, cards } = data || {};
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24">
+    <div className="w-full bg-white py-14 px-6 lg:py-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h2 className="font-playfair text-4xl lg:text-5xl text-center text-[#111111] mb-16 lg:mb-24">
+        <h2 className="font-playfair text-3xl lg:text-4xl text-center text-[#111111] mb-14 lg:mb-20">
           {title || "Your journey to ABC"}
         </h2>
 
-        <div className="flex flex-col gap-20 lg:gap-32 w-full">
+        <div className="flex flex-col gap-16 lg:gap-28 w-full">
           {cards &&
             cards.map((card: any, index: number) => {
               const imageUrl = getStrapiMedia(card.image?.url);
@@ -47,11 +47,11 @@ export default function Journey({ data }: any) {
                       isEven ? "lg:order-2" : "lg:order-1"
                     }`}
                   >
-                    <p className="font-playfair text-5xl lg:text-6xl text-[#B0B0B0] mb-4 lg:mb-6">
+                    <p className="font-playfair text-4xl lg:text-5xl text-[#B0B0B0] mb-3 lg:mb-5">
                       {card.count}
                     </p>
 
-                    <h3 className="font-playfair text-2xl lg:text-3xl font-semibold text-[#111111] mb-4">
+                    <h3 className="font-playfair text-xl lg:text-2xl font-semibold text-[#111111] mb-3">
                       {card.title}
                     </h3>
 

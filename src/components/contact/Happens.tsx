@@ -2,11 +2,11 @@ export default function Happens({ data }: any) {
   const { title, lists } = data || {};
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24 border-t border-gray-100">
+    <div className="w-full bg-white py-14 px-6 lg:py-20 border-t border-gray-100">
       <div className="max-w-9xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-50 items-center">
         {/* Left Column: Title */}
         <div className="flex justify-center md:justify-end w-full md:w-1/2">
-          <h2 className="font-playfair text-4xl lg:text-5xl text-[#111111] leading-tight text-center md:text-right">
+          <h2 className="font-playfair text-3xl lg:text-4xl text-[#111111] leading-tight text-center md:text-right">
             {title || "What Happens Next?"}
           </h2>
         </div>

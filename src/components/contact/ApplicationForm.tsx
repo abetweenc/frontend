@@ -105,9 +105,9 @@ export default function ApplicationForm() {
   };
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24 flex flex-col items-center">
+    <div className="w-full bg-white py-14 px-6 lg:py-20 flex flex-col items-center">
       <div className="w-full max-w-5xl mx-auto flex flex-col">
-        <h2 className="font-playfair text-3xl lg:text-5xl text-[#111111] text-center mb-12 lg:mb-16">
+        <h2 className="font-playfair text-2xl lg:text-4xl text-[#111111] text-center mb-10 lg:mb-14">
           Fill in the Form
         </h2>
 

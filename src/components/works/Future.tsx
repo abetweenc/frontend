@@ -5,11 +5,11 @@ export default function Future({ data }: any) {
   const { title, description, cards } = data || {};
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24">
+    <div className="w-full bg-white py-14 px-6 lg:py-20">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         {/* Header Section */}
-        <div className="flex flex-col items-center text-center gap-4 lg:gap-6 mb-16 lg:mb-20 max-w-3xl">
-          <h2 className="font-playfair text-4xl lg:text-5xl text-[#111111] leading-tight">
+        <div className="flex flex-col items-center text-center gap-3 lg:gap-5 mb-14 lg:mb-16 max-w-3xl">
+          <h2 className="font-playfair text-3xl lg:text-4xl text-[#111111] leading-tight">
             {title || "Built for the Future"}
           </h2>
           <p className="text-[#666666] text-base lg:text-lg leading-relaxed">
@@ -18,7 +18,7 @@ export default function Future({ data }: any) {
         </div>
 
         {/* 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 w-full">
           {cards &&
             cards.map((card: any, index: number) => {
               const iconUrl = getStrapiMedia(card.icon?.url);

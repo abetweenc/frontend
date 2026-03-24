@@ -2,12 +2,12 @@ export default function GapBetween({ data }: any) {
   const { title, description } = data || {};
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6 py-12 px-6 lg:px-0 lg:gap-10 lg:py-16">
-      <p className="font-playfair text-3xl leading-tight lg:leading-20 lg:text-6xl lg:max-w-5xl text-center">
+    <div className="flex flex-col items-center justify-center gap-5 py-10 px-6 lg:px-0 lg:gap-8 lg:py-14 border-b border-gray-200">
+      <p className="font-playfair text-2xl leading-tight lg:leading-16 lg:text-5xl lg:max-w-4xl text-center">
         {title}
       </p>
 
-      <p className="text-center text-[#444444] text-base lg:text-lg lg:max-w-5xl">
+      <p className="text-center text-[#444444] text-sm lg:text-base lg:max-w-4xl">
         {description}
       </p>
     </div>

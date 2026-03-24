@@ -4,19 +4,19 @@ export default function FlexiblePricing({ data }: any) {
   const { title, cards, cta } = data || {};
 
   return (
-    <div className="py-12 px-6 gap-10 lg:px-0 lg:gap-20 lg:py-16 w-full flex flex-col items-center justify-center">
-      <p className="font-playfair text-3xl leading-tight lg:leading-20 lg:text-6xl text-center">
+    <div className="py-10 px-6 gap-8 lg:px-0 lg:gap-16 lg:py-14 w-full flex flex-col items-center justify-center">
+      <p className="font-playfair text-2xl leading-tight lg:leading-16 lg:text-5xl text-center">
         {title}
       </p>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-auto gap-8 lg:gap-20">
+      <div className="flex flex-col lg:flex-row items-center justify-center w-full lg:w-auto gap-6 lg:gap-16">
         {cards &&
           cards.map((card: any, index: number) => (
             <div
               key={index || card.id}
-              className="border border-[#98A0AA] bg-[#EEEEEE] w-full max-w-sm lg:w-fit py-10 px-8 lg:min-h-120 lg:px-15 lg:py-10 flex flex-col items-center justify-center gap-6 lg:gap-8"
+              className="border border-[#98A0AA] bg-[#EEEEEE] w-full max-w-sm lg:w-fit py-8 px-7 lg:min-h-110 lg:px-12 lg:py-8 flex flex-col items-center justify-center gap-5 lg:gap-6"
             >
-              <p className="text-[#A1A1AA] text-4xl lg:text-5xl font-playfair text-center">
+              <p className="text-[#A1A1AA] text-3xl lg:text-4xl font-playfair text-center">
                 {card.title}
               </p>
 

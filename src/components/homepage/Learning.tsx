@@ -4,8 +4,8 @@ export default function Learning({ data }: any) {
   const { title, cta } = data || {};
 
   return (
-    <div className="w-full bg-[#F5F5F5] py-16 px-6 lg:py-24 flex flex-col items-center justify-center border-y border-gray-200">
-      <h2 className="font-playfair text-3xl lg:text-5xl text-center text-[#111111] mb-10">
+    <div className="w-full bg-[#F5F5F5] py-14 px-6 lg:py-20 flex flex-col items-center justify-center border-y border-gray-200">
+      <h2 className="font-playfair text-2xl lg:text-4xl text-center text-[#111111] mb-8">
         {title || "Find a Learning Hub Near You"}
       </h2>
 

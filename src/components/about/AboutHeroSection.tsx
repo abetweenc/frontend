@@ -9,15 +9,15 @@ export default function AboutHeroSection({ data }: any) {
   if (!imageUrl) return null;
 
   return (
-    <div className="lg:h-[87vh]">
-      <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full px-6 py-16 lg:py-0 lg:px-30 gap-12 lg:gap-0">
-        <div className="flex items-start flex-col gap-6 lg:gap-10 w-full lg:w-auto">
-          <h1 className="font-playfair text-4xl lg:text-6xl lg:max-w-2xl">
+    <div className="lg:h-[80vh]">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full px-6 py-14 lg:py-0 lg:px-24 gap-10 lg:gap-0">
+        <div className="flex items-start flex-col gap-5 lg:gap-8 w-full lg:w-auto">
+          <h1 className="font-playfair text-3xl lg:text-5xl lg:max-w-2xl">
             {title}
           </h1>
 
           {/* Added base text-lg for mobile */}
-          <p className="text-[#444444] text-lg lg:text-2xl font-light lg:max-w-lg">
+          <p className="text-[#444444] text-base lg:text-xl font-light lg:max-w-lg">
             {description}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function AboutHeroSection({ data }: any) {
             width={500}
             height={500}
             // Added w-full max-w-md h-auto to keep the image responsive and well-proportioned on small screens
-            className="object-cover object-center w-full max-w-xl h-auto lg:max-w-none lg:w-150"
+            className="object-cover object-center w-full max-w-xl h-auto lg:max-w-none lg:w-130"
             unoptimized
           />
         </div>

@@ -6,13 +6,13 @@ export default function Supporting({ data }: any) {
   const imageUrl = getStrapiMedia(image?.url);
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24">
+    <div className="w-full bg-white py-14 px-6 lg:py-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h2 className="font-playfair text-4xl lg:text-5xl text-[#111111] mb-12 lg:mb-20 text-center">
+        <h2 className="font-playfair text-3xl lg:text-4xl text-[#111111] mb-10 lg:mb-16 text-center">
           {title || "Supporting Parents Every Step"}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full">
           <div className="flex justify-center lg:justify-start w-full">
             {imageUrl && (
               <Image
@@ -50,7 +50,7 @@ export default function Supporting({ data }: any) {
                     </div>
 
                     <div className="flex flex-col gap-2 mt-1 lg:mt-1.5">
-                      <h3 className="font-playfair text-xl lg:text-2xl text-[#111111]">
+                      <h3 className="font-playfair text-lg lg:text-xl text-[#111111]">
                         {item.title}
                       </h3>
                       <p className="text-[#666666] text-sm lg:text-base leading-relaxed">

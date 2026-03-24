@@ -4,9 +4,9 @@ export default function Cta({ data }: any) {
   const { title, description, cta } = data || {};
 
   return (
-    <div className="w-full bg-[#222222] py-16 px-6 lg:py-24 flex flex-col items-center justify-center text-center">
+    <div className="w-full bg-[#222222] py-14 px-6 lg:py-20 flex flex-col items-center justify-center text-center">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
-        <h2 className="font-playfair text-3xl lg:text-5xl text-white mb-4 lg:mb-6 leading-tight">
+        <h2 className="font-playfair text-2xl lg:text-4xl text-white mb-4 lg:mb-5 leading-tight">
           {title || "Join Us on This Journey"}
         </h2>
 

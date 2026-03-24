@@ -12,12 +12,12 @@ export default function CoreValues({ data }: any) {
   ];
 
   return (
-    <div className="py-12 px-6 gap-10 lg:px-0 lg:gap-10 lg:py-16 w-full flex flex-col items-center justify-center">
-      <p className="font-playfair text-3xl leading-tight lg:leading-20 lg:text-6xl text-center">
+    <div className="py-10 px-6 gap-8 lg:px-0 lg:gap-8 lg:py-14 w-full flex flex-col items-center justify-center">
+      <p className="font-playfair text-2xl leading-tight lg:leading-16 lg:text-5xl text-center">
         {title}
       </p>
 
-      <div className="w-full flex flex-col lg:flex-row items-center lg:px-30 gap-6 lg:gap-10">
+      <div className="w-full flex flex-col lg:flex-row items-stretch lg:px-24 gap-5 lg:gap-8">
         {cards &&
           cards.map((card: any, index: number) => {
             const imageUrl = getStrapiMedia(card.icon?.url);
@@ -25,7 +25,7 @@ export default function CoreValues({ data }: any) {
             return (
               <div
                 key={card.id || index} // Added missing React key prop
-                className={`${cardColors[index % cardColors.length]} w-full h-auto flex flex-col px-6 py-10 gap-8 lg:px-10 lg:py-20 items-center justify-center lg:gap-16`}
+                className={`${cardColors[index % cardColors.length]} w-full flex flex-col px-5 py-8 gap-6 lg:px-8 lg:py-16 items-center justify-center lg:gap-12`}
               >
                 <Image
                   src={imageUrl}
@@ -36,12 +36,12 @@ export default function CoreValues({ data }: any) {
                   unoptimized
                 />
 
-                <div className="flex flex-col items-center justify-center gap-4 lg:gap-8">
-                  <p className="font-playfair text-xl lg:text-2xl text-white text-center">
+                <div className="flex flex-col items-center justify-center gap-3 lg:gap-6">
+                  <p className="font-playfair text-lg lg:text-xl text-white text-center">
                     {card.title}
                   </p>
 
-                  <p className="text-center text-white text-base">
+                  <p className="text-center text-white text-sm">
                     {card.description}
                   </p>
                 </div>

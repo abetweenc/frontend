@@ -7,7 +7,7 @@ export default function Environments({ data }: any) {
   if (!cards || cards.length === 0) return null;
 
   return (
-    <div className="w-full bg-white py-16 px-6 lg:py-24">
+    <div className="w-full bg-white py-14 px-6 lg:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
         {cards.map((card: any, index: number) => {
           const iconUrl = getStrapiMedia(card.icon?.url);
@@ -15,7 +15,7 @@ export default function Environments({ data }: any) {
           return (
             <div
               key={card.id || index}
-              className="flex flex-col items-center text-center gap-5 lg:gap-6 py-12 px-8 lg:py-16 lg:px-10 border border-[#98A0AA] bg-[#EEEEEE] shadow-[0_4px_15px_rgba(0,0,0,0.05)] rounded-[2px]"
+              className="flex flex-col items-center text-center gap-4 lg:gap-5 py-10 px-7 lg:py-14 lg:px-8 border border-[#98A0AA] bg-[#EEEEEE] shadow-[0_4px_15px_rgba(0,0,0,0.05)] rounded-[2px]"
             >
               {/* Icon */}
               {iconUrl && (
@@ -32,7 +32,7 @@ export default function Environments({ data }: any) {
               )}
 
               {/* Title */}
-              <h3 className="font-playfair text-2xl lg:text-3xl text-[#111111]">
+              <h3 className="font-playfair text-xl lg:text-2xl text-[#111111]">
                 {card.title}
               </h3>
 

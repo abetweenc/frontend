@@ -5,15 +5,15 @@ export default function Safe({ data }: any) {
   const { title, cards } = data || {};
 
   return (
-    <div className="w-full bg-[#F4F4F4] py-16 px-6 lg:py-24">
+    <div className="w-full bg-[#F4F4F4] py-14 px-6 lg:py-20">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {title && (
-          <h2 className="font-playfair text-3xl lg:text-5xl text-center text-[#111111] mb-12 lg:mb-16">
+          <h2 className="font-playfair text-2xl lg:text-4xl text-center text-[#111111] mb-10 lg:mb-14">
             {title}
           </h2>
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 w-full">
           {cards &&
             cards.map((card: any, index: number) => {
               const iconUrl = getStrapiMedia(card.icon?.url);
@@ -25,7 +25,7 @@ export default function Safe({ data }: any) {
                 >
                   {/* Text Content */}
                   <div className="flex flex-col gap-4 lg:gap-5 w-full items-start">
-                    <h3 className="font-playfair text-3xl lg:text-4xl text-[#111111] leading-tight lg:max-w-lg">
+                    <h3 className="font-playfair text-2xl lg:text-3xl text-[#111111] leading-tight lg:max-w-lg">
                       {card.title}
                     </h3>
 
@@ -34,13 +34,13 @@ export default function Safe({ data }: any) {
                         {card.description}
                       </p>
                       {iconUrl && (
-                        <div className="w-20 h-20 lg:w-24 lg:h-24 shrink-0 flex items-start justify-center mt-4 sm:mt-0">
+                        <div className="w-20 h-20 lg:w-50 lg:h-24 shrink-0 flex items-start justify-center mt-4 sm:mt-0">
                           <Image
                             src={iconUrl}
                             alt={card.title || "Icon"}
-                            width={96}
-                            height={96}
-                            className="w-full h-full object-contain opacity-80"
+                            width={200}
+                            height={200}
+                            className="w-full h-full object-contain lg:w-100"
                             unoptimized
                           />
                         </div>
