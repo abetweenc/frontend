@@ -8,7 +8,7 @@ export default function Working({ data }: any) {
           <h2 className="font-playfair text-2xl lg:text-4xl text-[#111111] leading-tight">
             {title || "Working with Local Councils & Organizations"}
           </h2>
-          <p className="text-[#555555] text-base lg:text-lg leading-relaxed max-w-4xl">
+          <p className="text-[#555555] text-base lg:text-md leading-relaxed max-w-6xl">
             {description}
           </p>
         </div>

@@ -12,7 +12,7 @@ export default function CoreValues({ data }: any) {
   ];
 
   return (
-    <div className="py-10 px-6 gap-8 lg:px-0 lg:gap-8 lg:py-14 w-full flex flex-col items-center justify-center">
+    <div className="py-10 px-6 gap-8 lg:px-0 lg:gap-20 lg:py-14 w-full flex flex-col items-center justify-center">
       <p className="font-playfair text-2xl leading-tight lg:leading-16 lg:text-5xl text-center">
         {title}
       </p>

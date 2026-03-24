@@ -6,7 +6,7 @@ export default function Safe({ data }: any) {
 
   return (
     <div className="w-full bg-[#F4F4F4] py-14 px-6 lg:py-20">
-      <div className="max-w-7xl mx-auto flex flex-col items-center">
+      <div className="max-w-320 mx-auto flex flex-col items-center lg:pl-20">
         {title && (
           <h2 className="font-playfair text-2xl lg:text-4xl text-center text-[#111111] mb-10 lg:mb-14">
             {title}

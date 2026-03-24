@@ -23,7 +23,7 @@ export default function HowItWorks({ data }: any) {
                   {card.title}
                 </p>
 
-                <p className="text-center text-base lg:text-sm max-w-sm lg:max-w-66 text-[#4A5565] leading-relaxed">
+                <p className="text-center text-base lg:text-sm max-w-sm lg:max-w-70 text-[#4A5565] leading-relaxed">
                   {card.description}
                 </p>
               </div>

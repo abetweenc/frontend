@@ -27,7 +27,7 @@ export default function ApproachHeroSection({ data }: any) {
               alt={title || "The Learning Hubs"}
               width={600}
               height={400}
-              className="w-full h-auto object-contain lg:max-w-xl"
+              className="w-full h-auto object-contain lg:max-w-2xl"
               unoptimized
             />
           )}
