@@ -10,14 +10,14 @@ export default function AboutHeroSection({ data }: any) {
 
   return (
     <div className="lg:h-[70vh]">
-      <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full px-6 py-14 lg:py-0 lg:-mt-10 lg:px-24 gap-10 lg:gap-0">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full px-6 py-14 lg:py-0 lg:-mt-10 lg:px-34 gap-10 lg:gap-0">
         <div className="flex items-start flex-col gap-5 lg:gap-8 w-full lg:w-auto lg:pl-10">
-          <h1 className="font-playfair text-3xl lg:text-6xl lg:max-w-2xl">
+          <h1 className="font-playfair text-3xl lg:text-5xl lg:max-w-2xl">
             {title}
           </h1>
 
           {/* Added base text-lg for mobile */}
-          <p className="text-[#444444] text-base lg:text-2xl font-light lg:max-w-lg">
+          <p className="text-[#444444] text-base lg:text-xl font-light lg:max-w-lg">
             {description}
           </p>
         </div>
