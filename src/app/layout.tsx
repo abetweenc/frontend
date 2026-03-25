@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Playfair_Display, Inter } from "next/font/google";
+import {
+  Playfair_Display,
+  Inter,
+  Hedvig_Letters_Serif,
+} from "next/font/google";
 import { getGlobalData } from "@/data/loader";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -16,6 +20,13 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+});
+
+const hedvig = Hedvig_Letters_Serif({
+  subsets: ["latin"],
+  display: "swap",
+
+  variable: "--font-hedvig",
 });
 
 export const metadata: Metadata = {
@@ -35,7 +46,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
+      className={`${playfair.variable} ${inter.variable} ${hedvig.variable} h-full antialiased`}
     >
       <body
         className="font-sans min-h-full flex flex-col"

@@ -15,7 +15,7 @@ export default function Growing({ data }: any) {
                 key={card.id || index}
                 className="flex flex-col items-center justify-center text-center bg-white border border-[#EAEAEE] py-10 px-5 gap-3 lg:gap-4 shadow-sm"
               >
-                <p className="font-playfair text-4xl lg:text-5xl text-[#9CA3AF]">
+                <p className="font-hedvig text-4xl lg:text-5xl text-[#9CA3AF]">
                   {card.count}
                 </p>
                 <p className="text-[#555555] text-sm lg:text-base font-medium">
