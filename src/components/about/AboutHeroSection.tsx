@@ -29,7 +29,7 @@ export default function AboutHeroSection({ data }: any) {
             width={500}
             height={500}
             // Added w-full max-w-md h-auto to keep the image responsive and well-proportioned on small screens
-            className="object-cover object-center w-full max-w-xl h-auto lg:max-w-none lg:w-125 lg:pr-10"
+            className="object-cover object-center w-full max-w-xl h-auto lg:max-w-none lg:w-125"
             unoptimized
           />
         </div>
